@@ -1,0 +1,60 @@
+.el-container{
+    height:100%;
+    .el-header{
+        background:rgb(26,95,132);
+        .el-row{
+            height:100%;
+            .el-col{
+                height:100%;
+                line-height:60px;
+                color:#fff;
+                &.left{
+                    font-size:20px;
+                    font-weight:500;
+                }
+                &.right{
+                    >div{
+                        float:right
+                    }
+                }
+        
+            }
+        }
+    }
+    .el-main{
+        font-size:16px;
+        height:calc(100% - 60px);
+        max-height:calc(100% - 60px);
+        padding:0px;
+        >.el-row{
+            height:100%;
+            .el-col{
+                height:100%;
+                &.left{
+                    background: rgb(29,43,54);
+                    .nav{
+                        .nav-item{
+                            border-bottom:1px solid rgba(143, 137, 137,0.3);
+                            a{
+                                width:100%;
+                                display:inline-block;
+                                padding:10px;
+                                &.router-link-exact-active{
+                                    background:rgb(51, 71, 87);
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+                &.right{
+                    color:black;
+                    overflow-y: auto;
+                    background:#ebdef3;
+                }
+            }
+
+        }
+    
+    }
+}

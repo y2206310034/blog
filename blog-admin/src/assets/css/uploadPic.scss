@@ -1,0 +1,15 @@
+.upload-pic{
+    margin:20px;
+    .el-row{
+        padding:20px;
+        >h2{
+            font-weight:bold;
+            font-size:16px;
+        }
+        &.pic-names{
+            .img-name-container{
+                margin:10px;
+            }
+        }
+    }
+}

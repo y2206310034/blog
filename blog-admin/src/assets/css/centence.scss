@@ -1,0 +1,118 @@
+.centence{
+    position: relative;
+    .uploadCentence{
+        margin:20px;
+        button{
+            z-index:22;
+            color:#fff;
+            width:100px;
+            height:40px;
+            border-radius:5px;
+        }
+    }
+    .showArea{
+        margin:0 20px;
+        .el-table__row{
+            td:last-child{
+                i{
+                    border:1px solid rgb(201, 199, 199);
+                    padding:3px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .el-pagination{
+            margin-top:10px;
+            float:right;
+            .active{
+                background:#1a5f84!important;
+            }
+        }
+    }
+    .uploadArea{
+        z-index:20;
+        position: absolute;
+        width:360px;
+        height:320px;
+        background:rgb(243, 243, 243);
+        border-radius: 10px;
+        top:0px;
+        left:50%;
+        margin-left:-180px;
+        opacity:0;
+        &.show{
+            animation: show 1s ease forwards;
+        }
+        &.hidden{
+            animation: hidden 1s ease forwards;
+        }
+        @keyframes show {
+            0%{
+                top:-50px;
+                opacity:0.3;
+            }
+            50%{
+                opacity:0.5
+            }
+            100%{
+                top:100px;
+                opacity:1;
+            }
+        }
+        @keyframes hidden{
+            0%{
+                top:100px;
+                opacity:0.8
+            }
+            50%{
+                opacity:0.4
+            }
+            100%{
+                top:-50px;
+                opacity:0;
+            }
+        }
+        >div{
+            padding:30px;
+            .el-row{
+                margin-bottom:20px;
+                &.content{
+                    width:100%;
+                    height:150px;
+                    textarea{
+                        vertical-align: top;
+                        resize:none;
+                    }
+                }
+                &.btn{
+                    margin-bottom:0;
+                    text-align: center;
+                    button{
+                        width:80px;
+                        height:35px;
+                        border-radius:5px;
+
+                    }
+                }
+                label{
+                    display:inline-block;
+                    width:60px;
+                }
+                input{
+                    text-indent: 10px;
+                    width:200px;
+                    height:25px;
+                }
+            }
+            .exit{
+                position: absolute;
+                top:10px;
+                right:15px;
+                color:#000;
+                background:rgb(243, 243, 243);
+                font-size:18px
+            }
+        }
+
+    }
+}

@@ -1,0 +1,43 @@
+.el-footer{
+    background:#000;
+    width:100%;
+    padding:0px;
+    height:60px;
+    .container{
+        margin:0 auto;
+        width:1170px;
+        text-align:center;
+        padding-top:20px;
+        span,a{
+            font-size:14px;
+            vertical-align: middle;
+            color: #d2d2d2;
+        }
+        a:hover{
+            color:#07b6e8;
+        }
+    }
+    @media screen and (max-width:768px){
+        .container{
+            padding:5px;
+            width:100%;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        .container{
+            width:750px;
+        }
+    }
+    @media screen and (min-width: 992px) {
+        .container{
+            width:970px;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        .container{
+            width:1170px;
+        }
+    }
+}
+
+

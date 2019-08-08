@@ -1,0 +1,42 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+html {
+    height: 100%;
+}
+body{
+    background: #f5f6f8;
+    min-height:100%;
+}
+
+ul,li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color:#34495e;
+    font-size:14px;
+}
+a:hover{
+    background-color: transparent;
+    color: #07b6e8;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+img.active{
+    animation: scale 0.3s ease-in-out ;
+}
+#app{
+    height:100%;
+    position: relative;
+}
+@keyframes scale{
+    0%{
+        transform: scale(0.2)
+    }
+    100%{
+        transform: scale(1)
+    }
+}

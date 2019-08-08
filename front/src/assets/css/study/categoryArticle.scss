@@ -1,0 +1,106 @@
+.article{
+    padding:0px 8px;
+    margin-bottom:20px;
+    @at-root .container::after{
+        content:"";
+        display:block;
+        clear: both;
+    }
+    .category-article{
+        width:100%;
+        position: relative;
+        background:#fff;
+        transition: all .3s ease;
+       
+        .tagAndBg{
+            float:left;
+            width:100%;
+            padding-right:20px;
+            height:180px;
+            
+            // padding-bottom:2px;
+            // box-sizing: border-box;
+            overflow: hidden;
+            .Bg{
+                display: block;
+                width:100%;
+                height:100%;
+                overflow: hidden;
+                img{
+                    transition: all .3s ease;
+                    width:100%;
+                    height:100%;
+                }
+            }
+            .tag{
+                position: absolute;
+                top:10px;
+                left:15px;
+                padding:0 10px;
+                height:22px;
+                line-height:22px;
+                font-size:12px;
+                color:#fff;
+                background:rgba(0,0,0,.6);
+                &:hover{
+                    background:rgba(0,0,0,.8);
+                }
+            }
+        }
+        @media screen and (max-width:768px){
+            .tagAndBg{
+                height:300px;
+            }
+        }
+        .article-info{
+            width:100%;
+            float: left;
+            padding:10px;
+            box-sizing: border-box;
+            h2{
+                margin: 0 auto;        
+                line-height: 24px;
+                height: 24px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                // white-space: nowrap;
+                margin-bottom:16px;
+                a{
+                    text-overflow: ellipsis;
+                    font-size: 16px;
+                    font-weight: 500;
+                    color:#000;
+                    &:hover{
+                        color: #07b6e8;
+                    }
+                }
+            }
+            .timeAndViews{
+                display:flex;
+                justify-content: space-between;
+                span{
+                    font-size:12px;
+                    color:#7f8c8d;
+                }
+            }
+
+        }
+
+        &::after{
+            content:"";
+            display:block;
+            clear:both;
+        }
+        &:hover{
+            box-shadow: 0 0 6px 0 rgba(0,0,0,.1);
+            border-radius: 5px;
+        }
+    }
+   
+    &:hover{
+        img{
+            transform: scale(1.1);
+        }
+    }
+    
+}

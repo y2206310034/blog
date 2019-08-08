@@ -1,0 +1,42 @@
+.personal{
+    margin:20px;
+    h2{
+        font-size:16px;
+    }
+    .updateWrap{
+        margin:20px;
+        .el-row{
+            margin-bottom:20px;
+            label{
+                display:inline-block;
+                width:75px;
+            }
+            input{
+                width:200px;
+                height:25px;
+                text-indent: 10px;
+                border-radius: 5px;
+                border:none;    
+                outline:none;
+            }
+            button{
+                display:inline-block;
+                border:none;    
+                outline:none;
+                background:rgb(26,95,132);
+                width:70px;
+                height:30px;
+                border-radius:5px;
+                color:#fff;
+                cursor: pointer;
+                &:hover{
+                    background:rgba(26, 95, 132, 0.705);
+                }
+            }
+            .tip{
+                color:red;
+                font-size:12px;
+            }
+        }
+    }
+}

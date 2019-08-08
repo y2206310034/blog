@@ -1,0 +1,38 @@
+.published{
+  .el-table{
+    .el-table__row{
+      td:last-child{
+          i{
+              border:1px solid rgb(201, 199, 199);
+              padding:3px;
+              cursor: pointer;
+          }
+      }
+      div.cell{
+          height:100%;
+          white-space:nowrap;
+          overflow: hidden;
+          .name-wrapper{
+            background:#fff;
+          }
+          .tag{
+            height:100%;
+            text-overflow:ellipsis;
+            display:inline-block;
+            padding:0 8px;
+            margin: 0 4px;
+            color:#fff;
+            background:	#6495ED;
+            border-radius: 2px;
+          }
+      }
+    } 
+  }
+  .el-pagination{
+    margin-top:10px;
+    float:right;
+    .active{
+        background:#1a5f84!important;
+    }
+  }
+}

@@ -1,0 +1,2 @@
+webpackJsonp([7],{kYRS:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var r={components:{category:n("OhM3").a}},c={render:function(){var e=this.$createElement;return(this._self._c||e)("category",{attrs:{category:"生活"}})},staticRenderFns:[]};var a=n("VU/8")(r,c,!1,function(e){n("nWT3")},null,null);t.default=a.exports},nWT3:function(e,t){}});
+//# sourceMappingURL=7.0b8d1aa049b1d6a762b9.js.map

@@ -1,0 +1,97 @@
+@import "./nav.scss";
+
+
+.el-header{
+    background: #FFF;
+    box-shadow: 0px 1px 4px #999;
+    @at-root .el-container{
+        .el-header {
+            padding:0px;
+            width: 100%;
+        }
+    }
+    .container{
+        position: relative;
+        height:60px;
+        margin:0 auto;
+        width:1170px;
+        // background:red;
+        .logo{
+            position: relative;
+            height:60px;
+            img{
+                position: absolute;
+                top:2px;
+                left:50%;
+                margin-left:-10px;
+                height:56px;
+            }
+        }
+        .searchAndLogin {
+             float:right;
+             height:60px;
+             >ul{
+                display:flex;
+                justify-content: space-between;
+             }
+             li{
+                word-wrap: none;
+                flex: 1 1 auto;
+                display:inline-block;
+             }
+            .search{
+                text-align: center;
+                height:100%;
+                line-height:60px;
+                .el-icon-search{
+                    font-weight:600;
+                    &:hover{
+                        color: #07b6e8;
+                        transition: all .3s ease;                        
+                    }
+                }
+            }
+            .login{
+                padding:0px 10px;
+                height:100%;
+                line-height:60px;
+                text-align: center;
+                a{                  
+                    span{
+                        font-size:16px;
+                    }
+                }
+            }
+        }
+       
+    }
+    @media screen and (max-width:768px){
+        .container{
+            position: relative;
+            width:100%;
+            .logo{
+                position: absolute;
+                left:50%;
+                transform: translateX(-50%);
+
+            }
+        }
+    }
+    @media screen and (min-width: 768px) {
+        .container{
+            width:750px;
+        }
+    }
+    @media screen and (min-width: 992px) {
+        .container{
+            width:970px;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        .container{
+            width:1170px;
+        }
+    }
+
+    
+}

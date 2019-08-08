@@ -1,0 +1,29 @@
+.msgBoard{
+    width:100%;
+    margin-bottom:20px;
+
+    .description{
+        background:white;
+        width:100%;
+        border-radius: 5px;
+        box-sizing: border-box;
+        padding:10px 15px 20px 15px;
+        box-shadow: 0 0 6px 0 rgba(0,0,0,.1);
+        text-align: left;
+        
+        .about_title{
+            box-sizing: border-box;
+            width:100%;
+            font-weight:600;
+            font-size:20px;
+            padding:10px 20px;
+            margin:20px 0px 20px 0px;
+            border-bottom:1px solid #b9b9b9;
+        }
+        .description p{
+            margin-top:5px;
+            padding:0px 0px 0px 10px;
+        }
+    }
+    
+}

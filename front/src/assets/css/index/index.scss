@@ -1,0 +1,41 @@
+.el-main{
+    width:100%;
+    padding: 0px!important;
+    >div{
+        min-height:580px;
+    }
+    .container{
+        margin:20px auto 0px;
+        padding:20px;
+        width:1170px;
+        box-sizing: border-box;
+    }
+    @media screen and (max-width:480px){
+        .container{
+            width:100%;
+            margin:0 auto;
+            padding:10px 5px;
+        }
+    }
+    
+    @media screen and (max-width:768px){
+        .container{
+            width:100%;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        .container{
+            width:750px;
+        }
+    }
+    @media screen and (min-width: 992px) {
+        .container{
+            width:970px;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        .container{
+            width:1170px;
+        }
+    }
+}

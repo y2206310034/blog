@@ -1,0 +1,35 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+html,body{
+    height:100%;
+    background: #f5f6f8;
+    // color:#fff;
+    font-size:16px;
+    min-width:500px;
+}
+ul,li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color:#FFF;
+    font-size:16px;
+}
+#app{
+    height:100%;
+}
+
+button{
+    border:none;
+    outline: none;
+    background:#1a5f84;
+    color:#fff;
+    cursor: pointer;
+    &:hover{
+        background:#3085b3;   
+    }
+}

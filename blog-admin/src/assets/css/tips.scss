@@ -1,0 +1,11 @@
+.tip{
+    display:inline;
+    font-size:14px;
+    &.red{
+        color:rgb(245, 33, 33);
+    }
+    &.green{
+        color:rgb(54, 240, 54);
+        margin-left:10px;
+    }
+}

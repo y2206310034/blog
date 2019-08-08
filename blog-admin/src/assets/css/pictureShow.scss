@@ -1,0 +1,52 @@
+.picture-show{
+    margin:20px;
+    .picture-operate{
+        div{
+            display:inline-block;
+            margin:10px;
+            &.delete{
+                button{
+                    height:26px;
+                    width:50px;
+                    // background:#1a5f84;
+                    // color:#fff;
+                    border-radius: 5px;
+                    &.isDisabled{
+                        &:hover{
+                            cursor:not-allowed;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .show-area{
+        margin-top:20px;
+        // background:Red;
+        .single-area{
+            background:rgba(233, 230, 230, 0.74);
+            display:inline-block;
+            margin:5px;
+            padding:10px;
+            width:32%;
+            text-align: center;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 2px rgb(180, 177, 177);
+            .el-image{
+                height:170px;
+                width:90%;
+                img{
+                    height:100%;
+                    width:100%;
+                }
+            }
+        }
+    }
+    .el-pagination{
+        margin-top:10px;
+        float:right;
+        .active{
+            background:#1a5f84!important;
+        }
+    }
+}

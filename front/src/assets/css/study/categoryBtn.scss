@@ -1,0 +1,25 @@
+.category-btn{
+    width:100%;
+    text-align: center;
+    margin-bottom:20px;
+    .el-button{
+        padding:15px 80px;
+    }
+    span{
+        display:inline-block;
+        color: #fff;
+        cursor: pointer;
+        .el-icon-arrow-down{
+            font-size:24px;
+        }
+        // &:active{
+        //     background-image: radial-gradient(circle,#c44133 10%,#e74c3c 11%);
+        //     background-size: 1000% 1000%;
+        //     box-shadow: 2px 2px 4px rgba(0,0,0,.4);
+        //     background-color: #c44133;
+        // }
+        // &:hover{
+        //     opacity: 0.8;
+        // }
+    }
+}

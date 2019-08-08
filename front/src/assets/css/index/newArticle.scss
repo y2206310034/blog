@@ -1,0 +1,25 @@
+
+.newArticleList{
+    padding:0 15px;
+    width: 100%;
+    box-sizing: border-box;
+    background:#fff;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,.1);
+    border-radius: 5px;
+    >h2{
+        display:inline-block;
+        font-size:20px;
+        margin-top:20px;
+        margin-bottom:10px;
+        font-weight:400;
+    }
+}
+.el-pagination {
+    .el-pager{
+        .number{
+            background:#fff;
+        }
+    }
+    margin-bottom:20px;
+    float:right;
+}

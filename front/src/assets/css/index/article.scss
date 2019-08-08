@@ -1,0 +1,101 @@
+
+.newArticle{
+    position: relative;
+    width:100%;
+    padding-bottom:25px;
+    margin-bottom:25px;
+    border-bottom:1px solid #f5f5f5;
+    .tagAndBg{
+        float:left;
+        width:250px;
+        height:170px;
+        padding-right:20px;
+        // padding-bottom:2px;
+        overflow: hidden;
+        .Bg{
+            display: block;
+            width:100%;
+            height:100%;
+            overflow: hidden;
+            img{
+                transition: all .3s ease;
+                width:100%;
+                height:100%;
+            }
+        }
+        .tag{
+            position: absolute;
+            top:10px;
+            left:15px;
+            padding:0 10px;
+            height:22px;
+            line-height:22px;
+            font-size:12px;
+            color:#fff;
+            background:rgba(0,0,0,.6);
+            &:hover{
+                background:rgba(0,0,0,.8);
+            }
+        }
+        &::after{
+            content:"";
+            display:block;
+            overflow:hidden;
+        }
+    }
+    .articleInfo{
+        height:170px;
+        text-overflow:ellipsis;
+        overflow: hidden;
+        .header{
+            h2{
+                margin:10px 0;
+                font-weight:500;
+                a{
+                    font-size:18px;
+                    color: #34495e;
+                    cursor: pointer;
+                    &:hover{
+                        color: #07b6e8;
+                        transition: all .3s ease;
+                    }
+                }
+                
+            }
+            
+            .time{
+                span{
+                    margin-right:10px;
+                    font-size:14px;
+                    &.time{
+                        color:#7f8c8d;
+                    }
+                }
+            }
+        }
+        .content{
+            margin-top:18px;
+            color: #777;
+            font-size:14px;
+        }
+    }
+    &:hover{
+        img{
+            transform: scale(1.1);
+        }
+    }
+
+}
+@media screen and (max-width:480px){
+    .newArticle{
+        padding-bottom:12px;
+        margin-bottom:12px;
+        .tagAndBg{
+            float:none;
+            width:100%;
+        }
+        .articleInfo{
+            height:100%;
+        }
+    }
+}
