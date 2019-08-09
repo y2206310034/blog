@@ -12,8 +12,6 @@ const Tag = ()=>import("@/page/tag.vue");
 const Error = ()=>import("@/page/error.vue");
 
 
-// Vue.use(VueRouter)
-
 export default new VueRouter({
   mode:"history",
   routes: [

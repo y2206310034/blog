@@ -2,10 +2,9 @@
 -------------------------
 **网站站点**:http://www.pastlove.net/
 
-**node后端框架**:express
+**node后端**:express,body-parser,compression,connect-history-api-fallback,express-jwt,formidable,js-md5,jsonwebtoken,mongoose
 
-**前端技术**:Vue全家桶,Axios,ElementUI,
-highlight.js,wangeditor
+**前端技术**:Vue全家桶,Axios,ElementUI,highlight.js,wangeditor,qs
 
 **数据库**:mongodb
 

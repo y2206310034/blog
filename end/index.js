@@ -3,6 +3,7 @@ const bodyParser = require("body-parser")  // 获取请求体中信息的中间�
 const globalConfig = require("./config.js");
 const history = require('connect-history-api-fallback');
 const app = express();
+// gzip压缩
 const compression = require('compression')
 //引入路由
 const admin = require("./routes/admin.js");
