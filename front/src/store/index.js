@@ -1,8 +1,7 @@
-import Vue from 'vue';
 import Vuex from 'vuex';
 import api from '../utils/api'
 import updateDate from '../utils/updateDate'
-Vue.use(Vuex);
+
 const store = new Vuex.Store({
     state:{
         articleList:[],

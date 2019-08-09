@@ -1,8 +1,5 @@
 import Axios from "axios"
 import urls from "./urls.js"
-
-
-
 const count = {
     hotCount:4
 }

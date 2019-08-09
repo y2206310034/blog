@@ -1,5 +1,4 @@
-import Vue from 'vue'
-import Router from 'vue-router'
+import VueRouter from 'vue-router'
 
 
 const defaultPage = ()=>import("@/layout/default.vue");
@@ -13,9 +12,9 @@ const Tag = ()=>import("@/page/tag.vue");
 const Error = ()=>import("@/page/error.vue");
 
 
-Vue.use(Router)
+// Vue.use(VueRouter)
 
-export default new Router({
+export default new VueRouter({
   mode:"history",
   routes: [
     {
