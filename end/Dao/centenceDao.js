@@ -22,7 +22,7 @@ const saveCentence = (centence,success)=>{
     let newCentence = new db.centence({
         ...centence,
         saveTime:Date.now(),
-        centeceId:0
+        centenceId:0
     })
     newCentence.save(function(err,doc){
         if(err){

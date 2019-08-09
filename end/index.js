@@ -3,6 +3,7 @@ const bodyParser = require("body-parser")  // 获取请求体中信息的中间�
 const globalConfig = require("./config.js");
 const history = require('connect-history-api-fallback');
 const app = express();
+const compression = require('compression')
 //引入路由
 const admin = require("./routes/admin.js");
 const index = require("./routes/index.js")
@@ -10,6 +11,8 @@ const index = require("./routes/index.js")
 
 app.use(bodyParser.urlencoded({ extended: false }));//解析post请求数据
 app.use(bodyParser.json());//数据JSON类型
+
+app.use(compression());
 
 let allowCrossDomain = function (req, res, next) {
     //域

@@ -34,7 +34,7 @@ path.set("/getArticleAdmin",getArticleAdmin);
 
 function setContent(result){
     for(var i =  0; i < result.length;i ++){
-        result[i].content = result[i].content.replace(/<img[\w\W]*"/g,"");
+        result[i].content = result[i].content.replace(/<img[\w\W]*>"/g,"");
         result[i].content = result[i].content.replace(/<[\w\W]*?>/g,"");
         result[i].content = result[i].content.substring(0,100);
     }
