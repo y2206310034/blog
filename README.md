@@ -9,5 +9,5 @@ highlight.js,wangeditor
 
 **数据库**:mongodb
 
-**部署**:阿里云服务器,Nginx
+**部署**:阿里云服务器,Nginx,CDN
 
