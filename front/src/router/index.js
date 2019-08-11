@@ -1,5 +1,6 @@
-import VueRouter from 'vue-router'
+// import VueRouter from 'vue-router'
 
+// Vue.use(VueRouter)
 
 const defaultPage = ()=>import("@/layout/default.vue");
 const Index = ()=>import("@/page/index.vue");

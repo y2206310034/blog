@@ -13,8 +13,8 @@
         </div>
         <div class="article-body">
             <div class="body-header">
-                <div class="tags">
-                    <ul>
+                <div class="">
+                    <ul class="tags">
                         <li v-for="tag in articleInfo.tags" :key="tag">
                             <tag :tag-value="tag" />
                         </li>
@@ -89,6 +89,6 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 
 </style>

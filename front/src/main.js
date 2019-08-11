@@ -4,7 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router' 
 
-// // 引入代码高亮
+// 引入代码高亮
 // import hljs from 'highlight.js';
 // import 'highlight.js/styles/vs2015.css' //样式文件
 
@@ -15,6 +15,9 @@ import store from "./store"
 // 用cdn用引入这里就不需要写
 // import ElementUI from 'element-ui'
 // import 'element-ui/lib/theme-chalk/index.css'
+
+// Vue.use(ElementUI)
+
 
 // 图片懒加载
 Vue.use(VueLazyload,{
